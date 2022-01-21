@@ -20,7 +20,7 @@ header {
   margin: 0 auto;
 }
 
-header > * {
+header>* {
   position: absolute;
 }
 
@@ -35,8 +35,7 @@ header div.welcome {
   top: 7%;
   left: 5%;
   right: 5%;
-  font-family: 'Saira Condensed',
-  sans-serif;
+  font-family: 'Saira Condensed', sans-serif;
   color: white;
   font-size: 40px;
   font-weight: bold;
@@ -67,10 +66,87 @@ header button {
   border: 2px solid white;
 }
 
+.features {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.features h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.feature h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feature p {
+  margin-top: 10%;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.text {
+  width: 100%;
+  background-color: black;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.portfolio {
+  width: 100vw;
+}
+
+.project {
+  height: 100vh;
+}
+
+.project img {
+  left: 0;
+  width: 100%;
+}
+
+.project h1 {
+  display: block;
+  width: 90%;
+  font-size: 1.8rem;
+  padding: 10%;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgb(68, 8, 146);
+}
+
+.project p {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 10%;
+}
+
+/* -------------------------------------------------------@MEDIA----------------------------------------- */
+
 @media (orientation: portrait) and (min-width: 360px) {
   header h1 {
     font-size: 24px;
   }
+
   header h2 {
     font-size: 24px;
   }
@@ -86,6 +162,7 @@ header button {
   header h1 {
     font-size: 26px;
   }
+
   header h2 {
     font-size: 26px;
   }
@@ -105,9 +182,11 @@ header button {
   header p {
     font-size: 80px;
   }
+
   header h1 {
     font-size: 32px;
   }
+
   header h2 {
     font-size: 32px;
   }
@@ -124,19 +203,125 @@ header button {
 }
 
 
+
+
+
 @media (orientation: landscape) {
   header img {
     height: 80%;
     bottom: 0;
     right: -5%;
   }
+
   header div.welcome {
     top: 15%;
     left: 7%;
     right: 48%;
   }
+
   header button {
     margin-top: 40px;
+  }
+
+  .features {
+
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 5%;
+  }
+
+  .feature {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .feature img {
+    width: 100%;
+    margin: 0 auto;
+
+
+  }
+
+  .features h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .feature h2 {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .feature p {
+    margin-top: 10%;
+    font-size: 1rem;
+    padding: 10px
+  }
+
+  .text {
+    width: 100vw;
+    font-size: 2rem;
+
+  }
+
+  .portfolio {
+
+    width: 100vw;
+    background-color: black;
+  }
+
+  .project {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .project:nth-of-type(odd) {
+    margin-bottom: 2%;
+  }
+
+  .project:nth-of-type(2) {
+    margin-bottom: 2%;
+  }
+
+
+  .project>* {
+    position: absolute;
+  }
+
+  .project img {
+    width: 50%;
+    left: 0;
+    margin: auto;
+  }
+
+  .project h1 {
+    left: 50%;
+    width: 40%;
+    font-size: 1rem;
+    padding: 2%;
+    text-transform: uppercase;
+    border-bottom: 4px solid rgb(68, 8, 146);
+    font-weight: bold;
+  }
+
+  .project p {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    font-size: 0.9rem;
+    padding: 2%;
+    text-align: left;
   }
 
 }
@@ -145,9 +330,11 @@ header button {
   header h1 {
     font-size: 24px;
   }
+
   header h2 {
     font-size: 24px;
   }
+
   header button {
     font-size: 16px;
     line-height: 40px;
@@ -163,13 +350,16 @@ header button {
   header p {
     font-size: 56px;
   }
+
   header h1 {
     margin-top: 40px;
     font-size: 34px;
   }
+
   header h2 {
     font-size: 34px;
   }
+
   header button {
     margin-top: 80px;
     font-size: 28px;
@@ -177,8 +367,8 @@ header button {
   }
 
   header img {
-    right: -22%;
-    height: 85%;
+    right: -35%;
+    height: 80%;
 
   }
 }
@@ -189,16 +379,20 @@ header button {
     text-align: left;
     left: 6%;
   }
+
   header p {
     font-size: 100px;
   }
+
   header h1 {
     margin-top: 40px;
     font-size: 50px;
   }
+
   header h2 {
     font-size: 50px;
   }
+
   header button {
     margin-top: 100px;
     font-size: 30px;
@@ -220,16 +414,20 @@ header button {
   header div.welcome {
     left: 8%;
   }
+
   header p {
     font-size: 120px;
   }
+
   header h1 {
     margin-top: 40px;
     font-size: 60px;
   }
+
   header h2 {
     font-size: 60px;
   }
+
   header button {
     line-height: 90px;
   }
@@ -248,10 +446,10 @@ header button {
     cursor: pointer;
     transition: .3s;
   }
+
   header button:hover {
     background-color: #fff;
     color: #111;
   }
 
 }
-
