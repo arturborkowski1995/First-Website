@@ -11,7 +11,7 @@ sans-serif;
   box-sizing: border-box;
 }
 
-header {
+.header {
   position: relative;
   background-color: #29a6dc;
   height: 100vh;
@@ -20,17 +20,11 @@ header {
   margin: 0 auto;
 }
 
-header>* {
+.header>* {
   position: absolute;
 }
 
-header img {
-  height: 50%;
-  bottom: 0;
-  right: 0;
-}
-
-header div.welcome {
+.welcome {
   z-index: 1;
   top: 7%;
   left: 5%;
@@ -43,18 +37,24 @@ header div.welcome {
   text-transform: uppercase;
 }
 
+.photo_header {
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
 
-header h1 {
+
+.welcome_name {
   margin-top: 15px;
   font-size: 20px;
 }
 
-header h2 {
+.welcome_job {
   font-size: 20px;
   font-weight: normal;
 }
 
-header button {
+.welcome_btn {
   font-family: 'Saira', sans-serif;
   font-weight: 300;
   line-height: 32px;
@@ -73,28 +73,28 @@ header button {
   text-align: center;
 }
 
-.feature img {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-
-}
-
-.features h1 {
+.features_slog {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-.feature h2 {
+.feature_photo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.feature_slog {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 
-.feature p {
+.feature_desc {
   margin-top: 10%;
   font-size: 1rem;
   padding: 10px;
@@ -120,12 +120,12 @@ header button {
   height: 100vh;
 }
 
-.project img {
+.project_photo {
   left: 0;
   width: 100%;
 }
 
-.project h1 {
+.project_name {
   display: block;
   width: 90%;
   font-size: 1.8rem;
@@ -134,7 +134,7 @@ header button {
   border-bottom: 4px solid rgb(68, 8, 146);
 }
 
-.project p {
+.project_desc {
   font-size: 1.2rem;
   text-align: left;
   padding: 10%;
@@ -143,15 +143,15 @@ header button {
 /* -------------------------------------------------------@MEDIA----------------------------------------- */
 
 @media (orientation: portrait) and (min-width: 360px) {
-  header h1 {
+  .welcome_name {
     font-size: 24px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 24px;
   }
 
-  header button {
+  .welcome_btn {
     margin-top: 24px;
     line-height: 40px;
     font-size: 16px;
@@ -159,45 +159,45 @@ header button {
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
-  header h1 {
+  .welcome_name {
     font-size: 26px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 26px;
   }
 
-  header button {
+  .welcome_btn {
     margin-top: 40px;
     line-height: 50px;
     font-size: 20px;
   }
 
-  header img {
+  .photo_header {
     right: -20%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
-  header p {
+  .welcome_hi {
     font-size: 80px;
   }
 
-  header h1 {
+  .welcome_name {
     font-size: 32px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 32px;
   }
 
-  header button {
+  .welcome_btn {
     margin-top: 60px;
     line-height: 60px;
     font-size: 24px;
   }
 
-  header img {
+  .photo_header {
     right: -20%;
   }
 }
@@ -207,19 +207,19 @@ header button {
 
 
 @media (orientation: landscape) {
-  header img {
+  .photo_header {
     height: 80%;
     bottom: 0;
     right: -5%;
   }
 
-  header div.welcome {
+  .welcome {
     top: 15%;
     left: 7%;
     right: 48%;
   }
 
-  header button {
+  .welcome_btn {
     margin-top: 40px;
   }
 
@@ -237,21 +237,19 @@ header button {
     margin: 0 auto;
   }
 
-  .feature img {
+  .feature_photo {
     width: 100%;
     margin: 0 auto;
-
-
   }
 
-  .features h1 {
+  .features_slog {
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
   }
 
-  .feature h2 {
+  .feature_slog {
     margin-top: 5%;
     font-size: 1.2rem;
     font-weight: bold;
@@ -259,7 +257,7 @@ header button {
     text-align: center;
   }
 
-  .feature p {
+  .feature_desc {
     margin-top: 10%;
     font-size: 1rem;
     padding: 10px
@@ -279,7 +277,7 @@ header button {
 
   .project {
     position: relative;
-    width: 100vw;
+    width: 90vw;
     height: 50vh;
     margin: 0 auto;
     background-color: white;
@@ -298,13 +296,14 @@ header button {
     position: absolute;
   }
 
-  .project img {
+  .project_photo {
     width: 50%;
+    height: 50vh;
     left: 0;
     margin: auto;
   }
 
-  .project h1 {
+  .project_name {
     left: 50%;
     width: 40%;
     font-size: 1rem;
@@ -314,12 +313,13 @@ header button {
     font-weight: bold;
   }
 
-  .project p {
+  .project_desc {
     display: block;
     position: absolute;
     left: 50%;
-    top: 25%;
-    font-size: 0.9rem;
+    top: 22%;
+    max-height: 50%;
+    font-size: 0.8rem;
     padding: 2%;
     text-align: left;
   }
@@ -327,15 +327,15 @@ header button {
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
-  header h1 {
+  .welcome_name {
     font-size: 24px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 24px;
   }
 
-  header button {
+  .welcome_btn {
     font-size: 16px;
     line-height: 40px;
   }
@@ -343,30 +343,30 @@ header button {
 
 @media (orientation: landscape) and (min-width: 1024px) {
 
-  header div.welcome {
+  .welcome {
     left: 3%;
   }
 
-  header p {
+  .welcome_hi {
     font-size: 56px;
   }
 
-  header h1 {
+  .welcome_name {
     margin-top: 40px;
     font-size: 34px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 34px;
   }
 
-  header button {
+  .welcome_btn {
     margin-top: 80px;
     font-size: 28px;
     line-height: 70px;
   }
 
-  header img {
+  .photo_header {
     right: -35%;
     height: 80%;
 
@@ -375,25 +375,25 @@ header button {
 
 @media (orientation: landscape) and (min-width: 1280px) {
 
-  header div.welcome {
+  .welcome {
     text-align: left;
     left: 6%;
   }
 
-  header p {
+  .welcome_hi {
     font-size: 100px;
   }
 
-  header h1 {
+  .welcome_name {
     margin-top: 40px;
     font-size: 50px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 50px;
   }
 
-  header button {
+  .welcome_btn {
     margin-top: 100px;
     font-size: 30px;
     line-height: 80px;
@@ -401,7 +401,7 @@ header button {
     border-width: 2px;
   }
 
-  header img {
+  .photo_header {
     right: -18%;
     height: 80%;
 
@@ -411,28 +411,28 @@ header button {
 
 @media (orientation: landscape) and (min-width: 1600px) {
 
-  header div.welcome {
+  .welcome {
     left: 8%;
   }
 
-  header p {
+  .welcome_hi {
     font-size: 120px;
   }
 
-  header h1 {
+  .welcome_name {
     margin-top: 40px;
     font-size: 60px;
   }
 
-  header h2 {
+  .welcome_job {
     font-size: 60px;
   }
 
-  header button {
+  .welcome_btn {
     line-height: 90px;
   }
 
-  header img {
+  .photo_header {
     right: -8%;
     height: 90%;
 
@@ -442,12 +442,12 @@ header button {
 
 
 @media (min-width: 1024px) {
-  header button {
+  .welcome_btn {
     cursor: pointer;
     transition: .3s;
   }
 
-  header button:hover {
+  .welcome_btn:hover {
     background-color: #fff;
     color: #111;
   }
