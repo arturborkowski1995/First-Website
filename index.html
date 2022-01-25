@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../www/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,11 +17,11 @@
   <p class="welcome__hi">witaj!</p>
   <h1 class="welcome__name">jestem jan nowak</h1>
   <h2 class="welcome__job">web developer - freelancer</h2>
-  <button class="welcome_btn">zobacz moje porfolio</button>
+  <button class="welcome__btn">zobacz moje porfolio</button>
   </div>
   <img class="photo__header" src="images/photo1.png" alt="men">
 </header>
-<section class="features">
+<section class="features clearfix">
   <h1 class="features__slog">tworzę bardzo dobre strony internetowe</h1>
   <div class="feature">
     <img class="feature__photo" src="images/services1.png" alt="html&css&js">
@@ -29,7 +29,7 @@
     <p class="feature__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, non delectus unde harum placeat voluptas nisi excepturi, quibusdam voluptatum aliquam consequatur ut. Laborum fugit eos velit praesentium doloremque vitae exercitationem?</p>
   </div>
   <div class="feature">
-    <img class="feature_photo" src="images/services2.png" alt="html&css&js">
+    <img class="feature__photo" src="images/services2.png" alt="html&css&js">
     <h2 class="feature__slog">nowoczesne i zgodnie z nowymi standardami</h3>
     <p class="feature__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, non delectus unde harum placeat voluptas nisi excepturi, quibusdam voluptatum aliquam consequatur ut. Laborum fugit eos velit praesentium doloremque vitae exercitationem?</p>
     </div>
@@ -39,30 +39,68 @@
     <p class="feature__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, non delectus unde harum placeat voluptas nisi excepturi, quibusdam voluptatum aliquam consequatur ut. Laborum fugit eos velit praesentium doloremque vitae exercitationem?</p>
     </div>
 </section>
-<p class="text">projekty z ktorych jestem dumny</p>
+
 <section class="portfolio">
+  <h1 class="portfolio__text">projekty z ktorych jestem dumny</h1>
   <div class="project clearfix">
-    <img class="project__photo" src="images/portfolio1.jpg" alt="allegro">
-    <h1 class="project__name">nazwa projektu</h1>
-    <p class="project__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    <div class="project__picture">
+    <img class="project_picture__img" src="images/portfolio1.jpg" alt="allegro">
+    </div>
+    <div class="project__about">
+    <h1 class="project_about__name">nazwa projektu</h1>
+    <p class="project_about__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    </div>
   </div>
   <div class="project clearfix">
-    <img class="project__photo" src="images/portfolio2.jpg" alt="allegro">
-    <h1 class="project__name">nazwa projektu</h1>
-    <p class="project__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    <div class="project__picture">
+    <img class="project_picture__img" src="images/portfolio2.jpg" alt="allegro">
+    </div>
+    <div class="project__about">
+    <h1 class="project_about__name">nazwa projektu</h1>
+    <p class="project_about__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    </div>
   </div>
   <div class="project clearfix">
-    <img class="project__photo" src="images/portfolio3.jpg" alt="allegro">
-    <h1 class="project__name">nazwa projektu</h1>
-    <p class="project__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    <div class="project__picture">
+    <img class="project_picture__img" src="images/portfolio3.jpg" alt="allegro">
+    </div>
+    <div class="project__about">
+    <h1 class="project_about__name">nazwa projektu</h1>
+    <p class="project_about__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    </div>
   </div>
   <div class="project clearfix">
-    <img class="project__photo" src="images/portfolio4.jpg" alt="allegro">
-    <h1 class="project__name">nazwa projektu</h1>
-    <p class="project__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    <div class="project__picture">
+    <img class="project_picture__img" src="images/portfolio4.jpg" alt="allegro">
+    </div>
+    <div class="project__about">
+    <h1 class="project_about__name">nazwa projektu</h1>
+    <p class="project_about__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, accusantium magnam velit atque ad incidunt ipsam unde modi provident eligendi nulla officia sequi perferendis fuga dolores reprehenderit architecto ducimus quibusdam.</p>
+    </div>
   </div>
 </section>
-<section></section>
+<section class="motto">
+  <div class="motto__bg">
+  <h1 class="motto_text__title">moje życiowe motto</h1>
+  <p class="motto_text__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius, nostrum reiciendis mollitia porro possimus repellat ducimus quidem libero maxime non magni exercitationem repudiandae itaque culpa soluta adipisci officiis amet.</p>
+  <p class="motto_text_desc__author">Arthur Delpierre</p>
+  </div>
+</section>
+<section class="hobby clearfix">
+  <h1 class="hobby__text">w wolnym czasie uwielbiam</h1>
+  <div class="hobby__item ">
+    <p class="hobby_item__text">Chodzić po górach</p>
+  </div>
+  <div class="hobby__item">
+    <p class="hobby_item__text">Zwiedzać</p>
+  </div>
+  <div class="hobby__item">
+    <p class="hobby_item__text">Zmieniać świat</p>
+  </div>
+  <div class="hobby__item">
+    <p class="hobby_item__text">Zdrowo się odżywiać</p>
+  </div>
+</section>
 <footer></footer>
 </body>
 
